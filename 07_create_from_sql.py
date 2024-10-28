@@ -8,6 +8,4 @@ countries = my_cursor.execute ('select * from countries')
 rows= my_cursor.fetchall()
 countries_df = pd.DataFrame(rows)
 functions.print_it('df from query result: ', countries_df)
-#alternative way 
-countries_df2 = pd.read_sql('Select * from countries', connection)
-functions.print_it('df directly from query result: ', countries_df2)
+# create a dataframethat shows sales data from the sales table <<< TO DO
